@@ -1,0 +1,93 @@
+        .footer-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            background-color: rgb(31, 30, 30);
+            flex-direction: column;
+        }
+        
+        .icons {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-icon {
+            color: white;
+            margin-left: 10px;
+            margin-right: 10px;
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 6px 8px 4px 8px;
+            box-shadow: 0px 5px 5px 0px rgb(255, 255, 255, 0.4);
+        }
+        
+        hr {
+            width: 65%;
+        }
+        /* .newsletter div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                flex: 1;
+        }*/
+        
+        .newsletter {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            place-items: center;
+        }
+        
+        .subscribe-btn {
+            background-color: rgb(31, 30, 30);
+            color: white;
+            border: 2px solid white;
+            padding: 5px 20px;
+            box-shadow: 0px 2px 3px 2px rgb(255, 255, 255, 0.4);
+        }
+        
+        @media screen and (max-width: 650px) {
+            .newsletter {
+                display: grid;
+                grid-template-columns: auto;
+                grid-gap: 20px;
+                place-items: center;
+            }
+        }
+        
+        .copyright {
+            width: 100%;
+            height: auto;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .footer-icon:hover {
+            color: black;
+            background-color: white;
+            border-color: black;
+            position: relative;
+            top: -10px;
+            box-shadow: 0px 5px 5px 0px rgb(255, 255, 255, 0.4);
+            transition: 1s ease-in-out;
+        }
+        
+        .subscribe-btn:hover {
+            color: black;
+            background-color: white;
+            border-color: white;
+            position: relative;
+            top: 10px;
+            font-weight: bolder;
+            border-radius: 10px;
+            box-shadow: 0px 5px 5px 0px rgb(255, 255, 255, 0.4);
+            margin-bottom: 10px;
+        }

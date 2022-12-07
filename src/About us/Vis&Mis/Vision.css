@@ -1,0 +1,58 @@
+    .vismis-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        place-items: center;
+    }
+    
+    .vision {
+        border: 2px solid black;
+        border-radius: 10px;
+        height: auto;
+        padding: 10px;
+        margin: 20px;
+        background-color: white;
+        font-family: sans-serif;
+        box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.3);
+        position: relative;
+        top: 0;
+    }
+    
+    .mission {
+        border: 2px solid black;
+        border-radius: 10px;
+        height: auto;
+        padding: 10px;
+        margin: 20px;
+        background-color: white;
+        font-family: sans-serif;
+        box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.3);
+        position: relative;
+        top: 0;
+    }
+    
+    .mission:hover {
+        box-shadow: -10px -10px 5px 5px rgba(0, 0, 0, 0.3);
+        top: 10px;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .vision:hover {
+        box-shadow: -10px -10px 5px 5px rgba(0, 0, 0, 0.3);
+        top: 10px;
+        transition: 0.2s ease-in-out;
+    }
+    
+    @media screen and (max-width:850px) {
+        .vismis-container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 20px;
+            place-items: center;
+            place-content: center;
+        }
+    }
+    
+    .cardimg {
+        height: 100px;
+    }
